@@ -37,10 +37,12 @@ const About: React.FC = () => {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Defending Data with <span className="text-cyber-green">Code & Strategy</span></h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
-            I am a passionate Cyber Security enthusiast holding a B.Tech degree. My journey in technology is driven by a curiosity to understand how systems work and, more importantly, how they can be secured against malicious actors.
+             I am a third-year Computer Science student with a strong interest in Cybersecurity and Ethical Hacking. I have hands-on experience with tools like Nmap, Maltego, FTK Imager, and Kali Linux for network scanning, reconnaissance, and basic digital forensics.
           </p>
           <p className="text-gray-400 mb-8 leading-relaxed">
-            With a strong foundation in network protocols, cryptography, and secure coding practices, I aim to contribute to organizations by identifying vulnerabilities and implementing robust security measures. I am constantly learning and adapting to the ever-evolving threat landscape.
+            Through platforms like TryHackMe, I have practiced vulnerability assessment, enumeration, and basic exploitation techniques in controlled lab environments.
+
+I am continuously improving my skills in penetration testing, network security, and vulnerability analysis, and I aim to build a career in cybersecurity by combining practical knowledge with strong problem-solving abilities.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
