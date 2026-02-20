@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex justify-center gap-6 text-gray-400">
+        <div className="flex justify-center gap-6 text-gray-400 relative z-20">
           <a href="https://github.com/rajhansh23" target="_blank" rel="noopener noreferrer" className="hover:text-cyber-green transition-colors hover:scale-110 transform duration-200">
             <Github size={24} />
           </a>
