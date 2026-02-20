@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
       description: "A modular command-line based EV management system developed in C to manage vehicle records, charging sessions, billing, and authentication. Implemented queue-based scheduling and file handling to simulate real-world EV charging station operations.",
       role: "C Developer",
       tech: ["C", "Data Structures", "File Handling", "Modular Programming", "GCC"],
+      link: "https://github.com/rajhansh23/EV-Charging-Management-System",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const Projects: React.FC = () => {
       description: "An interactive web-based memory management simulator built with PHP and Tailwind CSS to visualize garbage collection algorithms. Features real-time memory visualization, multiple GC strategies, performance statistics, and dynamic user controls for allocation and compaction.",
       role: "full stack developer",
       tech: ["PHP", "Object-Oriented Programming", "Tailwind CSS", "Chart.js", "JavaScript"],
+      link: "https://github.com/rajhansh23/garbage-collection",
     }
   ];
 
@@ -39,7 +41,7 @@ const Projects: React.FC = () => {
         {projects.map((project) => (
          <a
             key={project.id}
-            href="https://github.com/rajhansh23/ev-management-system"
+            href={project.link}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyber-gray rounded-xl overflow-hidden border border-gray-800 hover:border-cyber-green transition-all duration-300 group flex flex-col shadow-lg"
