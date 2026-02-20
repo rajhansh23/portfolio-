@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
             <img 
               src="/profile.jpg" 
               alt="Raj Hansh" 
-              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-cyber-dark ring-2 ring-cyber-green/50 shadow-2xl bg-cyber-gray"
+              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-contain bg-black border-2 border-cyber-dark ring-2 ring-cyber-green/50 shadow-2xl bg-cyber-gray"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 // Fallback to initials avatar if profile.jpg is missing
