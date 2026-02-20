@@ -2,7 +2,7 @@ import React from 'react';
 import { Terminal, Lock, ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const mailToLink = "mailto:rhansh33@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Raj%2C%0A%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect%20regarding%20an%20opportunity.";
+  const mailToLink = "mailto:rhansh33@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Raj,%0A%0AI%20would%20like%20to%20connect%20with%20you.";
 
   return (
     <section id="home" className="min-h-[calc(100vh-5rem)] flex flex-col items-center relative pb-10">
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
 
         <div className="h-8 md:h-12 mb-8">
           <p className="text-xl md:text-2xl text-gray-400 font-mono terminal-cursor">
-            B.Tech Cyber Security Professional
+            B.Tech Cyber Security Engineer
           </p>
         </div>
 
