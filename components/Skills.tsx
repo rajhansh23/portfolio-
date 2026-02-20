@@ -7,12 +7,12 @@ const Skills: React.FC = () => {
     {
       title: "Programming Languages",
       icon: <Code className="w-6 h-6 text-purple-400" />,
-      skills: ["C++", "Java", "Python", "HTML & CSS", "JavaScript"]
+      skills: ["C++", "Java", "Python", "HTML & CSS", "JavaScript" , "C" , "DSA"]
     },
     {
       title: "Tools & OS",
       icon: <Terminal className="w-6 h-6 text-yellow-400" />,
-      skills: ["Linux", "Git & GitHub", "Command Line Interface"]
+      skills: ["Linux", "Git & GitHub", "Command Line Interface" , "maltego" , "zenmap" , "FTKimager"]
     },
     {
       title: "Security & Networking",
