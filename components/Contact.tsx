@@ -6,7 +6,12 @@ const Contact: React.FC = () => {
 
   const mailToLink = "mailto:rhansh33@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Raj%2C%0A%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect%20regarding%20an%20opportunity.";
 
-  
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Simulate form submission
+    alert(`Encrypted message sent from ${formState.name}!`);
+    setFormState({ name: '', email: '', message: '' });
+  };
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden scroll-mt-20">
@@ -55,19 +60,17 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        <form
-  action="mailto:rhansh33@gmail.com"
-  method="POST"
-  encType="text/plain"
-  className="bg-cyber-gray p-8 rounded-xl border border-gray-800 shadow-2xl"
->
+        <form onSubmit={handleSubmit} className="bg-cyber-gray p-8 rounded-xl border border-gray-800 shadow-2xl">
           <div className="mb-6">
             <label htmlFor="name" className="block text-sm font-mono text-gray-400 mb-2">/User/Name</label>
             <input
-            
-  type="text"
-  name="name"
-  id="name"
+              type="text"
+              id="name"
+              required
+              value={formState.name}
+              onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+              className="w-full bg-black/50 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-cyber-green focus:ring-1 focus:ring-cyber-green transition-all placeholder-gray-600"
+              placeholder="John Doe"
             />
           </div>
 
@@ -75,16 +78,25 @@ const Contact: React.FC = () => {
             <label htmlFor="email" className="block text-sm font-mono text-gray-400 mb-2">/User/Email</label>
             <input
               type="email"
-  name="email"
-  id="email"
+              id="email"
+              required
+              value={formState.email}
+              onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+              className="w-full bg-black/50 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-cyber-green focus:ring-1 focus:ring-cyber-green transition-all placeholder-gray-600"
+              placeholder="john@secure.net"
             />
           </div>
 
           <div className="mb-6">
             <label htmlFor="message" className="block text-sm font-mono text-gray-400 mb-2">/Message/Payload</label>
             <textarea
-              name="message"
-  id="message"
+              id="message"
+              required
+              rows={4}
+              value={formState.message}
+              onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+              className="w-full bg-black/50 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-cyber-green focus:ring-1 focus:ring-cyber-green transition-all placeholder-gray-600"
+              placeholder="Input your query..."
             />
           </div>
 
@@ -101,4 +113,6 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default Contact; 
+
+
