@@ -37,15 +37,21 @@ const Projects: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="bg-cyber-gray rounded-xl overflow-hidden border border-gray-800 hover:border-cyber-green transition-all duration-300 group flex flex-col shadow-lg">
+         <a
+            key={project.id}
+            href={project.link || project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-cyber-gray rounded-xl overflow-hidden border border-gray-800 hover:border-cyber-green transition-all duration-300 group flex flex-col shadow-lg"
+            >
             <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
                {/* Abstract tech background */}
                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-400 via-gray-900 to-black"></div>
-               {project.id === 2 ? (
-                 <Cloud className="text-gray-600 w-16 h-16 group-hover:text-blue-400 transition-colors duration-500 transform group-hover:scale-110" />
-               ) : (
-                 <Terminal className="text-gray-600 w-16 h-16 group-hover:text-cyber-green transition-colors duration-500 transform group-hover:scale-110" />
-               )}
+               <img
+                   src={project.id === 1 ? "/ev.png" : "/gc.png"}
+                   alt={project.title}
+                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                   />
             </div>
             
             <div className="p-6 flex-1 flex flex-col">
@@ -84,7 +90,7 @@ const Projects: React.FC = () => {
                 )}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       
