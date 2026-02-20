@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
               value={formState.name}
               onChange={(e) => setFormState({ ...formState, name: e.target.value })}
               className="w-full bg-black/50 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-cyber-green focus:ring-1 focus:ring-cyber-green transition-all placeholder-gray-600"
-              placeholder="John Doe"
+              placeholder="raj hansh"
             />
           </div>
 
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
               value={formState.email}
               onChange={(e) => setFormState({ ...formState, email: e.target.value })}
               className="w-full bg-black/50 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-cyber-green focus:ring-1 focus:ring-cyber-green transition-all placeholder-gray-600"
-              placeholder="john@secure.net"
+              placeholder="raj@example.com"
             />
           </div>
 
