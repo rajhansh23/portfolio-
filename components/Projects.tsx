@@ -6,17 +6,17 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Cyber Security Lab Practice",
-      description: "Hands-on practice with Linux tools, networking commands, reconnaissance techniques, and system security concepts. Focused on practical application of security fundamentals.",
-      role: "Security Researcher",
-      tech: ["Linux", "Networking", "Security Tools"],
+      title: "Electric Vehicle Management System",
+      description: "A modular command-line based EV management system developed in C to manage vehicle records, charging sessions, billing, and authentication. Implemented queue-based scheduling and file handling to simulate real-world EV charging station operations.",
+      role: "C Developer",
+      tech: ["C", "Data Structures", "File Handling", "Modular Programming", "GCC"],
     },
     {
       id: 2,
-      title: "Cloud & DevOps Learning Projects",
-      description: "Practicing cloud deployment concepts, containerization, and DevOps workflows for scalable infrastructure. Building resilient systems using modern cloud technologies.",
-      role: "DevOps Engineer",
-      tech: ["AWS", "Docker", "DevOps"],
+      title: "Garbage collection system ",
+      description: "An interactive web-based memory management simulator built with PHP and Tailwind CSS to visualize garbage collection algorithms. Features real-time memory visualization, multiple GC strategies, performance statistics, and dynamic user controls for allocation and compaction.",
+      role: "full stack developer",
+      tech: ["PHP", "Object-Oriented Programming", "Tailwind CSS", "Chart.js", "JavaScript"],
     }
   ];
 
