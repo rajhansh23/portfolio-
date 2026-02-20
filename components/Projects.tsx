@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
         {projects.map((project) => (
          <a
             key={project.id}
-            href={project.link || project.github}
+            href="https://github.com/rajhansh23/ev-management-system"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyber-gray rounded-xl overflow-hidden border border-gray-800 hover:border-cyber-green transition-all duration-300 group flex flex-col shadow-lg"
